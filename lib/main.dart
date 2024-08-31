@@ -1,4 +1,5 @@
 import 'package:bookly_app_with_clean_arch/core/routes/app_router.dart';
+import 'package:bookly_app_with_clean_arch/core/routes/routes.dart';
 import 'package:bookly_app_with_clean_arch/core/theming/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -15,12 +16,13 @@ class BooklyAppWithCleanArch extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData().copyWith(
+      darkTheme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: ColorTheme.mainDarkBlue,
       ),
+      themeMode: ThemeMode.dark,
       title: 'Bookly App',
       debugShowCheckedModeBanner: false,
-      initialRoute: '/splashscreen',
+      initialRoute: Routes.splashScreen,
       onGenerateRoute: appRouter.generateRoute,
     );
   }
