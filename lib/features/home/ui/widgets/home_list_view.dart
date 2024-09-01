@@ -7,19 +7,16 @@ class HomeListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(left: 24.w),
-      child: SizedBox(
-        height: 200.h,
-        child: ListView.builder(
-            scrollDirection: Axis.horizontal,
-            itemBuilder: (contex, index) {
-              return Padding(
-                padding: EdgeInsets.only(right: 16.w),
-                child: const HomeListViewItem(),
-              );
-            }),
-      ),
+    return SizedBox(
+      height: 200.h,
+      child: ListView.builder(
+          scrollDirection: Axis.horizontal,
+          itemBuilder: (contex, index) {
+            return Padding(
+              padding: EdgeInsets.only(right: 16.w),
+              child: const HomeListViewItem(),
+            );
+          }),
     );
   }
 }

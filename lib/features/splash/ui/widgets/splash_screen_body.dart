@@ -1,5 +1,5 @@
-import 'package:bookly_app_with_clean_arch/core/helper/constants.dart';
 import 'package:bookly_app_with_clean_arch/core/routes/routes.dart';
+import 'package:bookly_app_with_clean_arch/core/utils/assets.dart';
 import 'package:bookly_app_with_clean_arch/features/splash/ui/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
 
