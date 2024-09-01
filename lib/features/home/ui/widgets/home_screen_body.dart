@@ -1,4 +1,6 @@
 import 'package:bookly_app_with_clean_arch/features/home/ui/widgets/custom_app_bar.dart';
+import 'package:bookly_app_with_clean_arch/features/home/ui/widgets/home_list_view.dart';
+import 'package:bookly_app_with_clean_arch/features/home/ui/widgets/home_list_view_item.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreenBody extends StatelessWidget {
@@ -6,11 +8,10 @@ class HomeScreenBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
-        Column(
-          children: [CustomAppBar()],
-        )
+        CustomAppBar(),
+        HomeListView(),
       ],
     );
   }
