@@ -1,4 +1,5 @@
 import 'package:bookly_app_with_clean_arch/core/helper/constants.dart';
+import 'package:bookly_app_with_clean_arch/core/routes/routes.dart';
 import 'package:bookly_app_with_clean_arch/features/splash/ui/widgets/sliding_text.dart';
 import 'package:flutter/material.dart';
 
@@ -18,15 +19,12 @@ class _SplashScreenBodyState extends State<SplashScreenBody>
   void initState() {
     // TODO: implement initState
     super.initState();
-    animationController = AnimationController(
-      vsync: this,
-      duration: const Duration(seconds: 1),
-    );
-    sliderAnimation = Tween<Offset>(
-      begin: const Offset(0, 2),
-      end: Offset.zero,
-    ).animate(animationController);
-    animationController.forward();
+    initSlidingAnimation();
+    Future.delayed(const Duration(seconds: 2), () {
+      Navigator.of(context).pushReplacementNamed(
+        Routes.homeScreen,
+      );
+    });
   }
 
   @override
@@ -44,6 +42,18 @@ class _SplashScreenBodyState extends State<SplashScreenBody>
         SlidingText(sliderAnimation: sliderAnimation)
       ],
     );
+  }
+
+  void initSlidingAnimation() {
+    animationController = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 1),
+    );
+    sliderAnimation = Tween<Offset>(
+      begin: const Offset(0, 2),
+      end: Offset.zero,
+    ).animate(animationController);
+    animationController.forward();
   }
 
   @override
