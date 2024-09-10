@@ -1,5 +1,5 @@
 import 'package:bookly_app_with_clean_arch/core/routes/routes.dart';
-import 'package:bookly_app_with_clean_arch/features/book_details/ui/book_details_screen.dart';
+import 'package:bookly_app_with_clean_arch/features/home/ui/book_details_screen.dart';
 import 'package:bookly_app_with_clean_arch/features/home/ui/home_screen.dart';
 import 'package:bookly_app_with_clean_arch/features/search/ui/search_screen.dart';
 import 'package:bookly_app_with_clean_arch/features/splash/ui/splash_screen.dart';

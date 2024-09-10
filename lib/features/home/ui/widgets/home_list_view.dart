@@ -1,4 +1,4 @@
-import 'package:bookly_app_with_clean_arch/core/widgets/custom_book_Item.dart';
+import 'package:bookly_app_with_clean_arch/features/home/ui/widgets/custom_book_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

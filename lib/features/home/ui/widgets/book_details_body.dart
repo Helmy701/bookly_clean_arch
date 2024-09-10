@@ -1,9 +1,9 @@
 import 'package:bookly_app_with_clean_arch/core/utils/styles.dart';
 import 'package:bookly_app_with_clean_arch/core/widgets/book_rating.dart';
-import 'package:bookly_app_with_clean_arch/core/widgets/custom_book_Item.dart';
-import 'package:bookly_app_with_clean_arch/features/book_details/ui/widgets/book_app_bar.dart';
-import 'package:bookly_app_with_clean_arch/features/book_details/ui/widgets/book_buttons.dart';
-import 'package:bookly_app_with_clean_arch/features/book_details/ui/widgets/similar_books_list_view.dart';
+import 'package:bookly_app_with_clean_arch/features/home/ui/widgets/book_app_bar.dart';
+import 'package:bookly_app_with_clean_arch/features/home/ui/widgets/book_buttons.dart';
+import 'package:bookly_app_with_clean_arch/features/home/ui/widgets/custom_book_item.dart';
+import 'package:bookly_app_with_clean_arch/features/home/ui/widgets/similar_books_list_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

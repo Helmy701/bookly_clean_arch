@@ -56,7 +56,7 @@ class CustomBookWithDetailsItem extends StatelessWidget {
                       style: TextStyles.font20Bold,
                     ),
                     const Spacer(),
-                    BookRating()
+                    const BookRating()
                   ],
                 )
               ],
